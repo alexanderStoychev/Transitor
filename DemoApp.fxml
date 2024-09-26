@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Region?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.transitor.group28.Controller">
+    <center>
+        <MapView fx:id="mapView" BorderPane.alignment="CENTER"/>
+    </center>
+    <right>
+        <VBox spacing="20.0" minWidth="240.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+            </padding>
+            <children>
+                <TextField fx:id="startDestinationTextField" promptText="Start Destination" maxWidth="Infinity"/>
+                <TextField fx:id="desiredDestinationTextField" promptText="Desired Destination" maxWidth="Infinity"/>
+                <Button text="Find Route" maxWidth="Infinity"/>
+                <Button text="Clear" maxWidth="Infinity"/>
+                <Region minHeight="400.0"/>
+                <Button text="Zoom In" maxWidth="Infinity"/>
+                <Button text="Zoom Out" maxWidth="Infinity"/>
+
+
+
+                <Button text="Reset View" maxWidth="Infinity"/>
+                <!-- More buttons or controls can be added here -->
+            </children>
+        </VBox>
+    </right>
+</BorderPane>
